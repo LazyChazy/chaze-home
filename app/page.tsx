@@ -1,14 +1,15 @@
-// app/page.tsx
-import React from 'react'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
+import Profile from './components/Profile.tsx'
+import About from './components/About.tsx'
+import Skills from './components/Skills.tsx'
+import Projects from './components/Projects.tsx'
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <Hero />
-      {/* Other components */}
-    </main>
+    <div className="space-y-32 max-w-6xl mx-auto">
+      <Profile />
+      <About />
+      <Skills />
+      <Projects />
+    </div>
   )
 }
